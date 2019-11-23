@@ -1,0 +1,141 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+  
+/* =========================================================================================== Fonts */
+
+  @font-face {
+    font-family: 'ralewayBold';
+    src: url('../src/assets/fonts/Raleway-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'ralewayLight';
+    src: url('../src/assets/fonts/Raleway-Light.ttf');
+  }
+
+  @font-face {
+    font-family: 'ralewayBold';
+    src: url('../src/assets/fonts/Raleway-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'ralewaySemi';
+    src: url('../src/assets/fonts/Raleway-SemiBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'ralewayExtraBold';
+    src: url('../src/assets/fonts/Raleway-ExtraBold.ttf');
+  }
+
+/* =========================================================================================== Main CSS */
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+body, html {
+    font-family: 'ralewaySemi';
+    scroll-behavior: smooth !important;
+}
+
+.site-background {
+    overflow-x: hidden;
+    background: #4D8DCA;
+}
+
+.home-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header {
+    text-align: left;
+    font-family: 'ralewayExtraBold', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+}
+
+.header-container {
+    border-left: 6px solid #B400FF;
+}
+
+  /*=============================================================================================== Animations */
+
+  @keyframes left-activate {
+    from {
+        transform: translate3d(-10px,0,0)
+    }
+  
+    to {
+        transform: translate3d(18px,0,0);
+        opacity: 1
+    }
+  }
+  @-webkit-keyframes left-activate {
+    from {
+        transform: translate3d(-10px,0,0)
+    }
+  
+    to {
+        transform: translate3d(18px,0,0);
+        opacity: 1
+    }
+  }
+
+  @keyframes from-bottom-activate {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+  
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+  }
+  
+  @-webkit-keyframes from-bottom-activate {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+  
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+  }
+  
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+  }
+  
+  .hidden {
+    opacity: 0
+  }
+
+  .from-bottom-activate {
+    opacity: 0;
+    animation-name: from-bottom-activate;
+    -webkit-animation-name: from-bottom-activate;
+  }
+  
+  .left-activate {
+    opacity: 0;
+    animation-name: left-activate;
+    -webkit-animation-name: left-activate;
+  }
+
+  /* ================================================================================== Test */
+
+  
