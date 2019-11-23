@@ -65,7 +65,7 @@ body, html {
 }
 
 .header-container {
-    border-left: 6px solid #B400FF;
+    border-left: 12px solid #B400FF;
 }
 
 /* ================================================================================================ Navigation */
@@ -74,22 +74,50 @@ body, html {
     z-index: 9;
     position: fixed;
     left: 32px;
-    width: 100px;
     top: 44%;
+    width: 240px;
   }
 .nav-rectangle {
     background: #fff;
     height: 30px;
     width: 10px;
+    transition: 400ms !important;
 }
 
 .nav-link-text {
+    opacity: 0;
     color: #fff;
     font-family: 'ralewayExtraBold';
     font-size: 30px;
     letter-spacing: 0px;
     line-height: 32px;
     text-transform: uppercase;
+    position: absolute;
+    left: -40px;
+    transition: 400ms;
+}
+
+.nav-link-container {
+    margin-bottom: 35px;
+    padding: 0 4px;
+}
+
+.nav-link-container:hover .nav-link-text {
+    opacity: 1;
+    color: #fff;
+    font-family: 'ralewayExtraBold';
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0px;
+    transition: 300ms;
+}
+
+.nav-link-container:hover .nav-rectangle {
+    background: #B400FF;
+    transition: 400ms !important;
 }
 
 .social-media-row .fab {
@@ -98,23 +126,28 @@ body, html {
     font-size: 40px;
     margin-left: 34px;
     transition: 350ms;
+    position: relative;
 }
 
 .fa-twitter:hover {
     color: #00acee;
     transition: 350ms;
+    text-shadow: 2px 2px 3.5px #505464;
 }
 .fa-youtube:hover {
     color: #c4302b;
     transition: 350ms;
+    text-shadow: 2px 2px 3.5px #505464;
 }
 .fa-twitch:hover {
     color: #6441a5;
     transition: 350ms;
+    text-shadow: 2px 2px 3.5px #505464;
 }
 .fa-soundcloud:hover {
     color: #ff7700;
     transition: 350ms;
+    text-shadow: 2px 2px 3.5px #505464;
 }
 
 .social-media-row {
