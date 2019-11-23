@@ -68,7 +68,64 @@ body, html {
     border-left: 6px solid #B400FF;
 }
 
-  /*=============================================================================================== Animations */
+/* ================================================================================================ Navigation */
+
+.vertical-menu {
+    z-index: 9;
+    position: fixed;
+    left: 32px;
+    width: 100px;
+    top: 44%;
+  }
+.nav-rectangle {
+    background: #fff;
+    height: 30px;
+    width: 10px;
+}
+
+.nav-link-text {
+    color: #fff;
+    font-family: 'ralewayExtraBold';
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.social-media-row .fab {
+    cursor: pointer;
+    color: #fff;
+    font-size: 40px;
+    margin-left: 34px;
+    transition: 350ms;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+    transition: 350ms;
+}
+.fa-youtube:hover {
+    color: #c4302b;
+    transition: 350ms;
+}
+.fa-twitch:hover {
+    color: #6441a5;
+    transition: 350ms;
+}
+.fa-soundcloud:hover {
+    color: #ff7700;
+    transition: 350ms;
+}
+
+.social-media-row {
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 20px 40px;
+}
+
+/* +=============================================================================================== Animations */
 
   @keyframes left-activate {
     from {
@@ -136,6 +193,41 @@ body, html {
     -webkit-animation-name: left-activate;
   }
 
-  /* ================================================================================== Test */
+  /* ================================================================================== Word Rotator */
 
+  .text {
+    position: absolute;
+    width: 100%;
+    font-size: 30px;
+  }
+  
+  .word {
+    color: #505464;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .letter {
+    /* display: inline-block; */
+    position: relative;
+    float: left;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+  }
+  
+  .letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  .letter.behind {
+    transform: rotateX(-90deg);
+  }
+  
+  .letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
   
