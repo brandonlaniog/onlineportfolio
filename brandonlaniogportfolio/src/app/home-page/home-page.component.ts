@@ -86,25 +86,6 @@ export class HomePageComponent implements OnInit {
     }, 700)
   }
 
-  navViewCheck() {
-    $(window).scroll(function () {
-      var scrollTop = $(window).scrollTop();
-      var windowHeight = $(window).height();
 
-      $(".contact-two-viewport").each(function () {
-        var offset = $(this).offset();
-        if (scrollTop <= offset.top && ($(this).height() + offset.top) < (scrollTop + windowHeight)) {
-
-          $('.projects-circle').removeClass("active-circle");
-          $('.projects-nav').removeClass("active-nav");
-
-        } else {
-          $('.contact-circle').removeClass("active-circle");
-          $('.contact-nav').removeClass("active-nav");
-
-        }
-      });
-    });
-  }
 
 }
