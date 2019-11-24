@@ -45,7 +45,7 @@ body, html {
 
 .site-background {
     overflow-x: hidden;
-    background: rgb(77, 141, 202);
+    background: #9c88ff;
 }
 
 .home-container {
@@ -65,22 +65,22 @@ body, html {
 
 .music-header {
     padding-left: 8px;
-    border-left: 8px solid #B400FF;
+    border-left: 8px solid rgb(140, 122, 230);
 }
 .album-container img {
     width: 100%;
 }
 
 .album-text {
-    color: #505464;
+    color: #353b48;
     font-family: 'ralewaySemi';
 }
 
 .album-title {
     font-family: 'ralewayExtraBold';
-    color: #fff;
+    color: #f5f6fa;
     font-size: 32px;
-    border-bottom: 4px solid #B400FF;
+    border-bottom: 4px solid #8c7ae6;
     line-height: 30px;
 }
 
@@ -93,12 +93,12 @@ body, html {
     letter-spacing: -1px;
     line-height: 52px;
     text-transform: uppercase;
-    color: #FFF;
+    color: #f5f6fa;
     
 }
 
 .header-container {
-    border-left: 12px solid #B400FF;
+    border-left: 12px solid #8c7ae6;
 }
 
 /* ================================================================================================ Navigation */
@@ -111,7 +111,7 @@ body, html {
     width: 240px;
   }
 .nav-rectangle {
-    background: #fff;
+    background: #f5f6fa;
     height: 30px;
     width: 10px;
     transition: 400ms !important;
@@ -119,7 +119,7 @@ body, html {
 
 .nav-link-text {
     opacity: 0;
-    color: #fff;
+    color: #f5f6fa;
     font-family: 'ralewayExtraBold';
     font-size: 30px;
     letter-spacing: 0px;
@@ -137,7 +137,7 @@ body, html {
 
 .nav-link-container:hover .nav-link-text {
     opacity: 1;
-    color: #fff;
+    color: #f5f6fa;
     font-family: 'ralewayExtraBold';
     font-size: 30px;
     letter-spacing: 0px;
@@ -149,19 +149,19 @@ body, html {
 }
 
 .nav-link-container:hover .nav-rectangle {
-    background: #B400FF;
+    background: #8c7ae6;
     transition: 400ms !important;
 }
 
 .nav-rectangle-active
  {
-    background: #B400FF;
+    background: #8c7ae6;
     transition: 400ms !important;
  }
 
  .nav-link-text-active {
     opacity: 1;
-    color: #fff;
+    color: #f5f6fa;
     font-family: 'ralewayExtraBold';
     font-size: 30px;
     letter-spacing: 0px;
@@ -174,7 +174,7 @@ body, html {
 
 .social-media-row .fab {
     cursor: pointer;
-    color: #fff;
+    color: #f5f6fa;
     font-size: 40px;
     margin-left: 34px;
     transition: 350ms;
@@ -184,28 +184,28 @@ body, html {
 .fa-twitter:hover {
     color: #00acee;
     transition: 350ms;
-    text-shadow: 2px 2px 3.5px #505464;
+    text-shadow: 2px 2px 3.5px #353b48;
 }
 .fa-youtube:hover {
     color: #c4302b;
     transition: 350ms;
-    text-shadow: 2px 2px 3.5px #505464;
+    text-shadow: 2px 2px 3.5px #353b48;
 }
 .fa-twitch:hover {
     color: #6441a5;
     transition: 350ms;
-    text-shadow: 2px 2px 3.5px #505464;
+    text-shadow: 2px 2px 3.5px #353b48;
 }
 .fa-soundcloud:hover {
     color: #ff7700;
     transition: 350ms;
-    text-shadow: 2px 2px 3.5px #505464;
+    text-shadow: 2px 2px 3.5px #353b48;
 }
 
 .fa-instagram:hover {
   color: #B232AD;
   transition: 350ms;
-  text-shadow: 2px 2px 3.5px #505464;
+  text-shadow: 2px 2px 3.5px #353b48;
 }
 
 .social-media-row {
@@ -242,7 +242,7 @@ text-align: left;
   letter-spacing: 0px;
   line-height: 52px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #f5f6fa;
   /* border-left: 6px solid #eb3b5a; */
   padding-left: 24px;
 }
@@ -253,7 +253,7 @@ header .overlay {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right, rgba(77, 141, 202, .8), rgba(77, 141, 202, .8));
+    background-image: linear-gradient(to right, rgba(140, 122, 230, .8), rgba(140, 122, 230, .8));
     z-index: 1;
   }
 
@@ -349,7 +349,7 @@ header .overlay {
   }
   
   .word {
-    color: #505464;
+    color: #353b48;
     position: absolute;
     width: 100%;
     left: 0;
